@@ -33,7 +33,7 @@ var ShortURLService = {
 		for(var i in this.urlDict) {
 			if(this.urlDict.hasOwnProperty(i) && this.urlDict[i] == shortUrl) {
 				delete this.urlDict[i];
-				console.log(this.shortUrlprefix + shortUrl + " removed")
+				console.log(this.shortUrlprefix + shortUrl + " removed");
 				return true;
 			}
 		}
