@@ -14,7 +14,7 @@ var ShortURLService = {
 //    ii. If shortUrl is not provided, generate one.
 //    iii. If the URL is saved, return the saved shortUrl ; otherwise, return false
 	add: function(longUrl, shortUrl){
-		var shortUrlGenerator = Math.random().toString(36).substr(2, 10); // started at 2 because it had "0." in the first 2 spots, dont want the dot to mess things up
+		var shortUrlGenerator = Math.random().toString(36).substr(2, 10); // started at 2 because it had "0." in the first 2 spots, don't want the dot to mess things up
 
 		this.urlDict[longUrl] = shortUrl || shortUrlGenerator;
 
@@ -54,7 +54,7 @@ var ShortURLService = {
 };
 
 // testing
-ShortURLService.add("test", "bacon");
+ShortURLService.add("test-test/test", "bacon");
 ShortURLService.add("eggs");
 ShortURLService.add("pancakes", "coffee");
 ShortURLService.add("toast", "tea");
